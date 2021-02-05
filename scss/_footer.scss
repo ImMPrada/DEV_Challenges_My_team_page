@@ -1,0 +1,10 @@
+.footer {
+    padding-top: 88px;
+    padding-bottom: 68.89px;
+
+    h2 {
+        @include fuentes(14px, 17.07px, 600, $monserrat);
+        color:#A9A9A9;
+        text-align: center;
+    }
+}

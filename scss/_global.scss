@@ -1,4 +1,16 @@
-$brk-small: 576px;
+$brk-small: 600px;
+
+
+$PTSans: 'PT Sans', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$monserrat: 'Montserrat', sans-serif;
+
+@mixin fuentes($fontSize, $lineHeight, $fontWeight, $fontFamily) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    font-family: $fontFamily;
+}
 
 * {
     margin: 0;
@@ -7,10 +19,10 @@ $brk-small: 576px;
 
 .content{
     padding: 0px 12px;
-    max-width: 586px;
 
-    @media screen and (min-width: $brk-small) {
-        padding: 0;
-        max-width: 786px;
+    @media (min-width: $brk-small) {
+        max-width: 932px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
